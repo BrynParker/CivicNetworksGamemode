@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MafiaRP Gamemode Systems Catalog</title>
+    <meta
+      name="description"
+      content="A production-ready sales catalog for the MafiaRP Garry's Mod gamemode, including plugins, addons, features, and completion estimates."
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <link rel="stylesheet" href="styles.css?v=20260611g" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script defer src="app.js?v=20260611c"></script>
+  </head>
+  <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MafiaRP home">
+        <span class="brand-mark">MR</span>
+        <span>
+          <strong>MafiaRP</strong>
+          <small>Garry's Mod Gamemode</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#showcase">Systems</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#readiness">Readiness</a>
+      </nav>
+      <sl-button class="header-cta" size="small" variant="primary" href="#catalog">
+        <sl-icon slot="prefix" name="search"></sl-icon>
+        Explore
+      </sl-button>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-media parallax-card" data-depth="0.024" aria-label="MafiaRP visual showcase">
+          <img src="assets/squadron_banner.jpg" alt="MafiaRP banner artwork" />
+          <div class="media-overlay">
+            <span>1989 criminal city framework</span>
+            <strong>Roleplay systems, economy loops, law enforcement, illicit production, properties, vehicles, phones, clothing, and staff tools.</strong>
+          </div>
+        </div>
+        <div class="hero-copy parallax-card" data-depth="0.014">
+          <p class="eyebrow">Commercial gamemode package</p>
+          <h1>MafiaRP</h1>
+          <p class="lead">
+            A heavily expanded Helix-based roleplay gamemode built around organized crime, civic life, policing,
+            business ownership, underground production chains, and deep character customization.
+          </p>
+          <div class="hero-actions">
+            <sl-button variant="primary" size="large" href="#catalog">
+              <sl-icon slot="prefix" name="collection"></sl-icon>
+              Browse Systems
+            </sl-button>
+            <sl-button variant="default" size="large" href="#readiness">
+              <sl-icon slot="prefix" name="bar-chart-line"></sl-icon>
+              Completion Report
+            </sl-button>
+          </div>
+          <div class="hero-stats" id="heroStats" aria-label="Gamemode statistics"></div>
+        </div>
+      </section>
+
+      <section id="overview" class="section narrow">
+        <p class="eyebrow">What the buyer gets</p>
+        <h2>A full city roleplay stack, not a loose addon pile.</h2>
+        <p>
+          This build combines bespoke MafiaRP plugins with mature addon integrations. It covers the daily loop
+          of a city server: character identity, factions, real estate, vehicles, policing, banking, casinos,
+          smuggling, crafting, drugs, alcohol, tobacco, phones, radios, clothing, admin operations, and UI.
+        </p>
+      </section>
+
+      <section class="feature-band">
+        <article class="parallax-card reveal-card" data-depth="0.03">
+          <img src="assets/mdpd_laptop.png" alt="Police laptop icon" />
+          <h3>Law and order</h3>
+          <p>CAD-style police workflows, armories, evidence, tickets, warrants, jails, cameras, rank controls, and field equipment.</p>
+        </article>
+        <article class="parallax-card reveal-card" data-depth="0.026">
+          <img src="assets/deed.png" alt="Property deed icon" />
+          <h3>Ownership economy</h3>
+          <p>Property deeds, keys, banking, casino ownership, businesses, vendors, vehicle dealers, and persistent world entities.</p>
+        </article>
+        <article class="parallax-card reveal-card" data-depth="0.032">
+          <img src="assets/coca_processor.png" alt="Processor icon" />
+          <h3>Illegal enterprise</h3>
+          <p>Multi-step cocaine, meth, weed, psychedelics, smuggling, contraband, lockpicking, fake names, and masking systems.</p>
+        </article>
+        <article class="parallax-card reveal-card" data-depth="0.024">
+          <img src="assets/nokia.png" alt="Nokia phone icon" />
+          <h3>Character life</h3>
+          <p>Phones, radios, clothing, accessories, bodygroups, backpacks, consumables, fishing, smoking, alcohol, and atmospheric UI.</p>
+        </article>
+      </section>
+
+      <section id="showcase" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Flagship systems</p>
+            <h2>High-value modules buyers will notice immediately.</h2>
+          </div>
+          <p>
+            These systems have the strongest feature depth, player-facing workflows, and sales-page appeal.
+          </p>
+        </div>
+        <div class="showcase-grid" id="showcaseGrid"></div>
+      </section>
+
+      <section id="catalog" class="section catalog-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Complete catalog</p>
+            <h2>Plugins and addons, renamed by what they do.</h2>
+          </div>
+          <p>
+            Completion estimates compare implemented feature surfaces against visible unfinished markers,
+            placeholder UI, debug/test commands, and missing polish.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="search-field">
+            <sl-icon name="search"></sl-icon>
+            <input id="searchInput" type="search" placeholder="Search systems, features, folders, entities..." />
+          </div>
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+            <option value="Core">Core</option>
+            <option value="Economy">Economy</option>
+            <option value="Crime">Crime</option>
+            <option value="Police">Police</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="UI">UI</option>
+            <option value="Admin">Admin</option>
+            <option value="Integration">Integration</option>
+          </select>
+          <select id="sourceFilter">
+            <option value="all">Plugins and addons</option>
+            <option value="Plugin">Plugins only</option>
+            <option value="Addon">Addons only</option>
+            <option value="Utility">Utility files</option>
+          </select>
+        </div>
+
+        <sl-tab-group class="catalog-tabs">
+          <sl-tab slot="nav" panel="cards">Cards</sl-tab>
+          <sl-tab slot="nav" panel="table">Readiness Table</sl-tab>
+          <sl-tab-panel name="cards">
+            <div class="catalog-grid" id="catalogGrid"></div>
+          </sl-tab-panel>
+          <sl-tab-panel name="table">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>System</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Completion</th>
+                    <th>Signals</th>
+                  </tr>
+                </thead>
+                <tbody id="systemsTable"></tbody>
+              </table>
+            </div>
+          </sl-tab-panel>
+        </sl-tab-group>
+      </section>
+
+      <section id="readiness" class="section readiness-section">
+        <div class="readiness-copy">
+          <p class="eyebrow">Completion model</p>
+          <h2>Practical readiness for a sale conversation.</h2>
+          <p>
+            A high score means the code shows implemented server/client surfaces, entities, items, UI, networking,
+            and few visible unfinished markers. A lower score does not always mean unusable; it usually means the
+            system would benefit from polish, QA, cleanup, or a tighter production pass before being marketed as complete.
+          </p>
+        </div>
+        <div class="readiness-panel">
+          <div id="completionSummary"></div>
+          <div class="legend">
+            <span><i class="dot ready"></i>90-100 polished</span>
+            <span><i class="dot stable"></i>80-89 strong</span>
+            <span><i class="dot review"></i>70-79 needs review</span>
+            <span><i class="dot build"></i>Below 70 active build</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>MafiaRP systems catalog. Built as static files for local review and future GitHub Pages deployment.</p>
+      <p>Interface uses Shoelace web components with custom styling inspired by modern component libraries.</p>
+    </footer>
+  </body>
+</html>
