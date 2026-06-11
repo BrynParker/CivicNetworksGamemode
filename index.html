@@ -10,7 +10,7 @@
     />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
-    <link rel="stylesheet" href="styles.css?v=20260611g" />
+    <link rel="stylesheet" href="styles.css?v=20260611h" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
     <script defer src="app.js?v=20260611c"></script>
   </head>
@@ -67,8 +67,8 @@
       </section>
 
       <section id="overview" class="section narrow">
-        <p class="eyebrow">What the buyer gets</p>
-        <h2>A full city roleplay stack, not a loose addon pile.</h2>
+        <p class="eyebrow"></p>
+        <h2>Notable Features</h2>
         <p>
           This build combines bespoke MafiaRP plugins with mature addon integrations. It covers the daily loop
           of a city server: character identity, factions, real estate, vehicles, policing, banking, casinos,
@@ -103,10 +103,10 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Flagship systems</p>
-            <h2>High-value modules buyers will notice immediately.</h2>
+            <h2>Server-Ready Systems</h2>
           </div>
           <p>
-            These systems have the strongest feature depth, player-facing workflows, and sales-page appeal.
+            These systems are complete, feature-rich systems ready for deployment.
           </p>
         </div>
         <div class="showcase-grid" id="showcaseGrid"></div>
@@ -116,7 +116,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Complete catalog</p>
-            <h2>Plugins and addons, renamed by what they do.</h2>
+            <h2>Systems List</h2>
           </div>
           <p>
             Completion estimates compare implemented feature surfaces against visible unfinished markers,
@@ -148,29 +148,28 @@
           </select>
         </div>
 
-        <sl-tab-group class="catalog-tabs">
-          <sl-tab slot="nav" panel="cards">Cards</sl-tab>
-          <sl-tab slot="nav" panel="table">Readiness Table</sl-tab>
-          <sl-tab-panel name="cards">
-            <div class="catalog-grid" id="catalogGrid"></div>
-          </sl-tab-panel>
-          <sl-tab-panel name="table">
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>System</th>
-                    <th>Type</th>
-                    <th>Category</th>
-                    <th>Completion</th>
-                    <th>Signals</th>
-                  </tr>
-                </thead>
-                <tbody id="systemsTable"></tbody>
-              </table>
-            </div>
-          </sl-tab-panel>
-        </sl-tab-group>
+        <div class="catalog-grid" id="catalogGrid"></div>
+
+        <details class="readiness-details">
+          <summary>
+            <span>Readiness table</span>
+            <sl-icon name="chevron-down"></sl-icon>
+          </summary>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>System</th>
+                  <th>Type</th>
+                  <th>Category</th>
+                  <th>Completion</th>
+                  <th>Signals</th>
+                </tr>
+              </thead>
+              <tbody id="systemsTable"></tbody>
+            </table>
+          </div>
+        </details>
       </section>
 
       <section id="readiness" class="section readiness-section">
@@ -196,8 +195,8 @@
     </main>
 
     <footer>
-      <p>MafiaRP systems catalog. Built as static files for local review and future GitHub Pages deployment.</p>
-      <p>Interface uses Shoelace web components with custom styling inspired by modern component libraries.</p>
+      <p>Copyright © 2026 Bryn </p>
+      <p></p>
     </footer>
   </body>
 </html>

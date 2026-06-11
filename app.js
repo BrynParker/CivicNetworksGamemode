@@ -1213,7 +1213,7 @@ function renderCatalog() {
     const color = scoreColor(system.completion);
     return `
       <tr>
-        <td><strong>${system.title}</strong><br><span class="path-line">${system.path}</span></td>
+        <td><strong>${system.title}</strong></td>
         <td>${system.source}</td>
         <td>${system.category}</td>
         <td>
